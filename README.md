@@ -16,5 +16,6 @@ daughertySingle.js
 - - - I finished this up today, April 25, 2021.
 
 - The other files are my steps in getting to my solution to the Regular Expressions challenge.
-- - This is the work I had completed when I spoke with Susan and Chris, but our conversations were such that mentioning them would have been weird.
+- The order of work was: daughertyRegEx.js, daughertyStrikes.js, then daughertyFuncRegEx.js
+- - These were completed when I spoke with Susan and Chris, but our conversations were such that mentioning them would have been weird.
 - - - This is in no way meant as a criticism of them or of me. We had great conversations which just didn't happen to include this topic.

@@ -128,7 +128,8 @@ function bowlingScore(game) {
 // console.log("Final score game1 = ", bowlingScore(game1));
 console.log("Final score game2 = ", bowlingScore(game2));
 // console.log("Final score game3 = ", bowlingScore(game3));
-// console.log("Final score game4 = ", bowlingScore(game4));// console.log("Final score game5 = ", bowlingScore(game5));
+// console.log("Final score game4 = ", bowlingScore(game4));
+// console.log("Final score game5 = ", bowlingScore(game5));
 // console.log("Final score game6 = ", bowlingScore(game6));
 // console.log("Final score game7 = ", bowlingScore(game7));
 // console.log("Final score game8 = ", bowlingScore(game8));
