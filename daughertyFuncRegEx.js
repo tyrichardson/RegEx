@@ -1,3 +1,5 @@
+// to run in vs code: in terminal, type: node filename.js
+
 let game1 = "XXXXXXXXXXXX"; // perfect game
 let game2 = "1/1/1/1/1/1/1/1/1/1/1"; // all spares
 let game3 = "131-1-1-1-1-1-1-1-1-"; // no spares, no strikes, frames not reported correctly (works for sequential gutter balls)
@@ -8,7 +10,9 @@ let game7 = "XX11XXXXXXXXX"; // some strikes, two strikes in final frames
 let game8 = "XX11XXXXXXXX1"; // some strikes, 1 pin in final frame
 
 // for a game with both strikes and spares (gutters are just zero), since both have scores of 10, one must track which values of 10 are for strikes and with for spares in order to score properly. One could continue using an array for this problem by pushing 'strike' or 'spare' in the next index after each 10, then referencing currentIndex + 1 to see if the 10 is a strike or spare. Or one could use an array of objects in these mixed instances using 'strike' and 'spare' as the keys with values of 10.
-let game9 = "111/11XX111/11X1111"; //83
+
+// let game9 = "111/11XX111/11X11"; //83
+let game9 = "X3-5/X237/-52/9-XXX";
 
 function bowlingScore(game) {
   //game1, perfect game
@@ -16,9 +20,9 @@ function bowlingScore(game) {
     return 300;
   }
   //game9, mix of strikes and spares
-  //see daughertySingle.js
-    if ( /X/.test(game) && /\//.test(game) ) {
-        console.log('game9 ', game);
+  //see daughertySingle.js -- working on it
+  if (/[X+?\-+?\/]/.test(game)) {
+    console.log(game);
   }
   //game7, game8, strikes
   if (/\X+/.test(game)) {
@@ -118,15 +122,14 @@ function bowlingScore(game) {
     return score;
   }
 
-//end of function
+  //end of function
 }
 
-console.log("Final score game1 = ", bowlingScore(game1));
+// console.log("Final score game1 = ", bowlingScore(game1));
 console.log("Final score game2 = ", bowlingScore(game2));
-console.log("Final score game3 = ", bowlingScore(game3));
-console.log("Final score game4 = ", bowlingScore(game4));
-console.log("Final score game5 = ", bowlingScore(game5));
-console.log("Final score game6 = ", bowlingScore(game6));
-console.log("Final score game7 = ", bowlingScore(game7));
-console.log("Final score game8 = ", bowlingScore(game8));
-console.log("Final score game9 = ", bowlingScore(game9));
+// console.log("Final score game3 = ", bowlingScore(game3));
+// console.log("Final score game4 = ", bowlingScore(game4));// console.log("Final score game5 = ", bowlingScore(game5));
+// console.log("Final score game6 = ", bowlingScore(game6));
+// console.log("Final score game7 = ", bowlingScore(game7));
+// console.log("Final score game8 = ", bowlingScore(game8));
+// console.log("Final score game9 = ", bowlingScore(game9));
